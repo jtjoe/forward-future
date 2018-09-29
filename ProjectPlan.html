@@ -4,19 +4,13 @@
       <title>Forward Future</title>
       <meta charset="utf-8">
       <meta name ="viewport"content="width=device-width, initial-scale=1.0">
+      <!-- Using the Google Font API to use Khand and Oxygen in CSS -->
+      <link href="https://fonts.googleapis.com/css?family=Khand|Oxygen" rel="stylesheet">
       <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
       </script>
       <![endif]-->
-      <link rel="stylesheet" href="_name of css file_.css">
-		<style type = "text/css">
-		body {background: linear-gradient(to left, #F5F7FA,#C3CFE2)}
-		p.oblique {font-style:oblique}
-		body {font-family:sans-serif;}
-		a.one:link {color:#FC9D99;}
-		a.one:visited {color:#FC9D99;}
-		a.one:hover {color:#FFCC66;}
-		</style>
+      <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -27,13 +21,11 @@
       </header>
 
       <nav>
-        <ul>
-          <a class="one" href="index.html">Welcome Page</a>
-          <a class="one" href="about.html">About the Project</a>
-          <a class="one" href="specifications.html">Specifications</a>
-          <a class="one" href="ProjectPlan.html">Project Plan</a>
-          <a class="one" href="Team.html">Team Page</a>
-        </ul>
+          <a href="index.html">Welcome Page</a>&nbsp;
+          <a href="about.html">About the Project</a>&nbsp;
+          <a href="specifications.html">Specifications</a>&nbsp;
+          <a href="ProjectPlan.html">Project Plan</a>&nbsp;
+          <a href="Team.html">Team Page</a>&nbsp;
       </nav>
 
       <div id="ProjectInformation">
@@ -49,29 +41,32 @@
           <br>Customers range from the everyday consumer, who register an account with the website.
           </li>
           <li><b>What do users contribute to the database?</b>
-          <br>Users contribute Login Credentials, as well as lists of fashion. Such as most popular items, and highest rated.
+          <br>Users contribute Login Credentials, as well as lists of fashion.User contributions may include information such as most popular items, and highest rated items.
+          Users are also able to create wishlists and customize products.
           </li>
           <li><b>What can viewers of the site do?</b>
-          <br>Viewers can use browse the site, but will not have access to purchasing and such without creating an account. All registered Users will be able buy, rate, possibly sell  fashion tech.
+          <br>Viewers can use browse the site, but will not have access to purchasing and such without creating an account. All registered Users will be able buy, rate, possibly sell fashion tech.
           </li>
           <li><b>What are the relationships in the data-base tables?</b>
           <br>Admins will have access to site statistics, and will be able to update inventory as seen fit.
           Regular users can shop, rate, comment on fashion tech.
           Unregistered viewers can  can browse the site, but will have limited interactivity with the products.
+          The users will have a username and login, and will be assigned an user ID which will act as the primary key.
+          There may be other tables such as wishlist data that will use the unique user IDs.
           </li>
         </ul>
 
         <h2>Schedule & Milestones</h2>
 
         <ul>
-          <li>September 26,2018- Submit Proposal</li>
-          <li>October   3, 2018-  Finalize Ideas from proposal for initial website draft.</li>
-          <li>October 10, 2018- Continue Building website</li>
-          <li>October 19,2018- Have general layout of site completed, begin implementing Fashion library</li>
-          <li>October 26,2018-Using SQL, being creating backend to house user credentials and access to site.</li>
-          <li>November 9,2018- Begin finalizing protoype website </li>
-          <li>November 16,2018- Have website Prototype completed, add any extra ideas and items to library.</li>
-          <li>November, 30,2018-  Complete company website, and prepare for class presentation.</li>
+          <li>September 26, 2018- Submit Proposal</li>
+          <li>October  3, 2018- Finalize Ideas from proposal for initial website draft.</li>
+          <li>October 10, 2018- Continue Building website.</li>
+          <li>October 19, 2018- Have general layout of site completed, begin implementing Fashion library, with React.js and A-Frame.</li>
+          <li>October 26, 2018- Using Node.js and SQL, begin creating backend to house user credentials and access to site.</li>
+          <li>November 9, 2018- Begin finalizing protoype website.</li>
+          <li>November 16, 2018- Have website Prototype completed, add any extra ideas and items to library.</li>
+          <li>November 30, 2018- Complete company website, and prepare for class presentation.</li>
         </ul>
 
 
@@ -82,13 +77,13 @@
           <li>Interactive menus to view fashion library. </li>
           <li>Implementation of site statistics, to create featured items. </li>
           <li>Implantation of React.js for interactivity.</li>
-
+          <li>Addition of interactivity to 3D models</li>
         </ul>
 
-        <h2>Features that may be lost if tie limits</h2>
+        <h2>Features that may be lost if time limits</h2>
 
         <ul>
-          <li>Customization of inventory, such a coloring, and sizing of products.</li>
+          <li>Customization of inventory, such as coloring, and sizing of products.</li>
           <li>Inventory size, have to borrow premade A-Frame items.</li>
 
         </ul>
@@ -97,7 +92,7 @@
       </main>
 
       <footer>
-        <p class="oblique">Forward Future Forever
+        <p>Forward Future Forever
 
         </p>
       </footer>
