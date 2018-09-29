@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>HTML 5 - Foward Future</title>
+
+
+<style type = "text/css">
+		body {background: linear-gradient(to left, #F5F7FA,#C3CFE2)}
+		p.oblique {font-style:oblique}
+		body {font-family:sans-serif;}
+		a.one:link {color:#FC9D99;}
+		a.one:visited {color:#FC9D99;}
+		a.one:hover {color:#FFCC66;}
+		</style>
+
+	</head>
+	<body>
+		
+		<h1> Foward Future</h1>
+
+		<h2> About</h2>
+		<p>
+			The purpose of Forward Future is to explore the possibility of 
+			integrating 3D visualization into an online shopping <br/> experience. 
+			Currently, retailers lose the ability to showcase a 360 degree full 
+			detail view of their product when selling <br/> on the internet. The disconnect
+		        between customer expectations and actual product can impact companies 
+			negatively, with <br/> reputation and item return costs. Forward Future aims to 
+			be a proof-of-concept for increasing customer engagement and <br/> satisfaction 
+			through adding interactive 3D models into the company web store.
+		</p>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
