@@ -4,7 +4,7 @@ class LoginButton extends React.Component {
   render() {
     return (
       <div id="loginbutton">
-        <button></button>
+        <button type="button">Log In</button>
       </div>
     );
   }

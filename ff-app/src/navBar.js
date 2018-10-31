@@ -1,4 +1,6 @@
-//nav bar component
+import React, { Component } from 'react';
+import CartButton from './cartButton';
+
 class NavBar extends React.Component {
   render() {
     return (
@@ -10,16 +12,4 @@ class NavBar extends React.Component {
   }
 }
 
-//my cart button
-class CartButton extends React.Component {
-  render() {
-    return (
-
-    );
-  }
-}
-
-ReactDOM.render(
-  <NavBar />,
-  document.getElementById('navigation')
-);
+export default NavBar;
