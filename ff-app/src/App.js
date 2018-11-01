@@ -15,7 +15,6 @@ class App extends Component {
           <p>
             Welcome to Forward Future
           </p>
-          <p>Hello React!</p>
         </header>
       </div>
     );
