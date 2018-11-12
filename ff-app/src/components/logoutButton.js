@@ -5,7 +5,7 @@ class LogoutButton extends React.Component {
   render() {
     return (
       <div id="logoutbutton">
-        <button type="button">Log Out</button>
+        <button type="button" onClick={this.props.onClick}>Logout</button>
       </div>
     );
   }
