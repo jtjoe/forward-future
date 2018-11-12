@@ -8,7 +8,7 @@ The purpose of Forward Future is to explore the possibility of integrating 3D vi
 https://jtjoe.github.io/forward-future/
 
 To test and develop on your local computer:
-0) Make sure npm is installed on your computer. Try typing 'npm -v' into the command line. A version number should appear if it is already installed.
-1) Clone or download this repo. Fetch and pull any new commits if necessary.
-2) Open the command line and navigate to the 'src' folder of this project (C:/_____/forward-future/ff-app/src)
-3) Type 'npm start'. It may take a while, but a new browser window should pop up with the address localhost:3000. Editing and saving any file in the 'src' folder should make the page reload automatically. If an error occurs, try 'npm install', then 'npm start'. 
+1) Make sure npm is installed on your computer. Try typing 'npm -v' into the command line. A version number should appear if it is already installed.
+2) Clone or download this repo. Fetch and pull any new commits if necessary.
+3) Open the command line and navigate to the 'src' folder of this project (C:/_____/forward-future/ff-app/src)
+4) Type 'npm start'. It may take a while, but a new browser window should pop up with the address localhost:3000. Editing and saving any file in the 'src' folder should make the page reload automatically. If an error occurs, try 'npm install', then 'npm start'. 
