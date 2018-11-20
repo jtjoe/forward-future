@@ -1,47 +1,47 @@
 import React, { Component } from 'react';
-import LoginButton from './loginButton.js';
-import LogoutButton from './logoutButton.js';
-import SignupButton from './signupButton.js';
+import NavBar from './navBar';
+import Account from './account';
+import LogoutButton from './logoutButton';
 
 class AccountControl extends React.Component {
   constructor(props) {
     super(props);
-    this.handleLoginClick = this.handleLoginClick.bind(this);
-    this.handleLogoutClick = this.handleLogoutClick.bind(this);
-    this.handleSignupClick = this.handleSignupClick.bind(this);
-    this.state = {isLoggedIn: false};
+    this.handleMainPages = this.handleMainPages.bind(this);
+    this.handleAccount = this.handleAccount.bind(this);
+
+    this.state = {isLoggedIn: false,
+                  showForm: false,
+                  mainPage: "index",
+                };
   }
 
-  handleLoginClick() {
-    // TODO: redirect to login page
-    // TODO: show dashboard components
-    this.setState({isLoggedIn: true});
+  handleMainPages(pageToShow) {
+    //show or hide components such as dashboard depending on login state
+    this.setState({mainPage: pageToShow});
   }
-
-  handleLogoutClick() {
-    // TODO: redirect to index
-    this.setState({isLoggedIn: false});
-  }
-
-  handleSignupClick() {
-    // TODO: redirect to signup or show signup components
-    this.setState({isLoggedIn: false});
+  handleAccount(loginType) {
+    //handles login logic such as signing in
+    this.setState({showForm: loginType});
   }
 
   render() {
-    const isLoggedIn = this.state.isLoggedIn;
-    let button;
+    //enable relevant handler for each page
+    //show form
+    const page = <signupButton onClick={this.handleSignupClick} />;
+    const form = this.state.showForm;
 
-    if (isLoggedIn) {
-      button = <LogoutButton onClick={this.handleLogoutClick} />;
-    } else {
-      button = <LoginButton onClick={this.handleLoginClick} />;
+    if (this.state.isLoggedIn) {
+      //user is already logged in
+
+      //set components for different pages
     }
 
     return (
       <div>
-
-        {button}
+      <NavBar />
+      <Account />
+        {page}
+        {form}
       </div>
     );
   }
