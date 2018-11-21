@@ -14,13 +14,11 @@
       <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script> -->
 
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
-      </script>
-      <![endif]-->
+
       <link rel="stylesheet" href="style.css">
 	  <link rel="stylesheet" href="home.css">
 	  <link rel="stylesheet" href="login.css">
+	
     </head>
 
 	  <button2 onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button2>
@@ -48,10 +46,11 @@
 
  	   <div class="container" style="background-color:#f1f1f1">
  	     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
- 	     <span class="psw"> <a href="Register">Create a Account</a></span>
+ 	     <span class="psw"> <a href="Login.html">Create a Account</a></span>
  	   </div>
 	  </form>
 	</div>
+	  
 
 	<script>
 // Get the modal
@@ -99,20 +98,23 @@
 		</div>
       <main>
 		  
-	  	<nav>
+	  <nav>
      	  <a class="one" href="home.html">Home<br></a>
-       <a class="one" href="Login.html">Register<br></a>
-       <a class="one" href="Dashboard.html">Dashboard<br></a>
+       <a class="one" href="login.html">Register<br></a>
+       <a class="one" href="dashboard.html">Dashboard<br></a>
        <a class="one" href="product.html">Products</a>
       	</nav>
+		  
+		  
       </main>
+		   
 
 		<script>
-				var slideIndex = 0;
-				showSlides();
-
-				function showSlides() {
-					var i;
+				    var slideIndex = 0;
+				    showSlides();
+ 
+				    function showSlides() {
+				 	var i;
 					var slides = document.getElementsByClassName("mySlides");
 					var dots = document.getElementsByClassName("dot");
 					for (i = 0; i < slides.length; i++) {
@@ -131,8 +133,7 @@
 			  
 			  
       <footer>
-        <p>
-
+        <p>Copyright © 2018 Forawrd Furture
         </p>
       </footer>
 

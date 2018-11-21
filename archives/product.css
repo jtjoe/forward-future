@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+ibody {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.iheader {
+    text-align: center;
+    padding: 32px;
+}
+
+.irow {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 50px 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.icolumn {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+	margin-top: 10px;
+	margin-left: 200px;
+    padding: 0 4px;
+}
+
+.icolumn img {
+	width: 8%;
+	margin-left: 20px;
+    vertical-align: center;
+}
+
+/* Style the buttons */
+.ibtn {
+    border: none;
+    outline: none;
+	width: 8%;
+    padding: 10px 2px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+	position:relative;
+    left:50px;
+    top:5px;
+}
+
+.ibtn:hover {
+    background-color: #ddd;
+	padding: 10px 2px;
+}
+
+.ibtn.active {
+    background-color: #666;
+    color: white;
+}
