@@ -17,6 +17,7 @@ class App extends Component {
               <img src={logo} className="ff-logo" alt="logo" />
               <p>
                 Welcome to Forward Future
+
               </p>
             </header>
       </div>
