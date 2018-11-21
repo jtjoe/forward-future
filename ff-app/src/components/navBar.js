@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import CartButton from './cartButton';
-import AccountControl from './accountControl';
 
 class NavBar extends React.Component {
 

@@ -1,59 +1,49 @@
 import React, { Component } from 'react';
-import LoginButton from './loginButton.js';
-import LogoutButton from './logoutButton.js';
-import SignupButton from './signupButton.js';
-import SignupForm from './signupForm.js';
 
-class AccountControl extends React.Component {
+class ComponentControl extends React.Component {
   constructor(props) {
     super(props);
-    this.handleLoginClick = this.handleLoginClick.bind(this);
-    this.handleLogoutClick = this.handleLogoutClick.bind(this);
-    this.handleSignupClick = this.handleSignupClick.bind(this);
+    this.handleHomeClick = this.handleHomeClick.bind(this);
+    this.handleCollectionsClick = this.handleCollectionsClick.bind(this);
+    this.handleDashboardClick = this.handleDashboardClick.bind(this);
     this.state = {isLoggedIn: false};
   }
 
-  handleLoginClick() {
-    // TODO: redirect to login page
-    // TODO: show dashboard components
-    this.setState({isLoggedIn: true});
+  handleHomeClick() {
+    // TODO: show home page components
+    //this.setState({isLoggedIn: true});
   }
 
-  handleLogoutClick() {
-    // TODO: redirect to index
-    this.setState({isLoggedIn: false});
+  handleCollectionsClick() {
+    // TODO: show shop components depending on login state
+    //this.setState({isLoggedIn: false});
   }
 
-  handleSignupClick() {
-    // TODO: redirect to signup or show signup components
-    this.setState({isLoggedIn: false});
+  handleDashboardClick() {
+    // TODO: shwo dashboard depending on login state
+    //this.setState({isLoggedIn: false});
   }
 
   render() {
     const isLoggedIn = this.state.isLoggedIn;
-    let button;
-    let form;
+    let page;
 
     if (isLoggedIn)
     {
-      button = <LogoutButton onClick={this.handleLogoutClick} />;
-      form =
+      //different components for each page
+
     }
     else
     {
-      button = <LoginButton onClick={this.handleLoginClick} />;
-
+      //different components for pages, with login/signup warnings
     }
 
     return (
       <div>
-
-        {button}
-
-        {form}
+        {page}
       </div>
     );
   }
 }
 
-export default AccountControl;
+export default ComponentControl;

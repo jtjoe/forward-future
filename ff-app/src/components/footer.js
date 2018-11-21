@@ -5,9 +5,10 @@ class Footer extends React.Component {
     return (
       <div id="footer">
         <p>
-          
-          <a href="index.html">Home</a> &nbsp;
-          <a href="#">Back to Top</a> &nbsp;
+
+        Forward Future is the final product of a group project for CPI310, Web Information Management Systems.
+        The group members are Jona Joe, Jesus Morales, Lisa Lopez, and Shuyue Li.
+        The source code for the project can be found <a href="https://github.com/jtjoe/forward-future">here</a>.
         </p>
       </div>
     );

@@ -27,3 +27,21 @@ class App extends Component {
 }
 
 export default App;
+
+/*
+TODO:
+- Pages control
+  -welcome page contents
+  -shop page
+  -dashboard page
+    -for non-users
+    -for users
+  -404 error page
+  -login error page
+
+- Account control
+  -logins, signups
+  -invalid logins
+  -redirect to dashboard
+
+*/
