@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Forward Future</title>
+      <meta charset="utf-8">
+      <!-- Using the Google Font API to use Khand and Oxygen in CSS -->
+      <link href="https://fonts.googleapis.com/css?family=Khand|Oxygen" rel="stylesheet">
+      <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+      <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+      <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+      <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+      <!-- <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+      <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script> -->
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+      </script>
+      <![endif]-->
+      <link rel="stylesheet" href="style.css">
+	  <link rel="stylesheet" href="home.css">
+	  <link rel="stylesheet" href="login.css">
+    </head>
+
+	  <button2 onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button2>
+
+		<div id="id01" class="modal">
+  
+  		<form class="modal-content animate" action="/action_page.php">
+   		 <div class="imgcontainer">
+   		   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+   		   <img src="../ff-app/src/assets/logo-horizontal.png" alt="Avatar" class="avatar">
+ 		   </div>
+	
+ 		   <div class="container">
+ 	     <label for="uname"><b>Username</b></label>
+ 	     <input type="text" placeholder="Enter Username" name="uname" required>
+
+  	    <label for="psw"><b>Password</b></label>
+  	    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+  	    <button type="submit">Login</button>
+  	    <label>
+  	      <input type="checkbox" checked="checked" name="remember"> Remember me
+  	    </label>
+  	  </div>
+
+ 	   <div class="container" style="background-color:#f1f1f1">
+ 	     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+ 	     <span class="psw"> <a href="Register">Create a Account</a></span>
+ 	   </div>
+	  </form>
+	</div>
+
+	<script>
+// Get the modal
+		var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	  </script>
+	  
+	    <body>
+ 	   <div id="main">
+
+  	    <header>
+		  <h2>Welcome to Forward Future</h2>
+		
+        <a class="logo" href="home.html"><img border = "0" src="Logo.png" /></a>
+			
+		</header>
+		  
+		<div class="slideshow-container">
+
+		<div class="mySlides fade">
+  		<img src="vue.jpg" style="width:150%">
+		</div>
+
+		<div class="mySlides fade">
+  		<img src="Shose.jpg" style="width:150%">
+		</div>
+
+		<div class="mySlides fade">
+  		<img src="ai.jpg" style="width:190%">
+		</div>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+  		<span class="dot"></span> 
+  		<span class="dot"></span> 
+  		<span class="dot"></span> 
+		</div>
+      <main>
+		  
+	  	<nav>
+     	  <a class="one" href="home.html">Home<br></a>
+       <a class="one" href="Login.html">Register<br></a>
+       <a class="one" href="Dashboard.html">Dashboard<br></a>
+       <a class="one" href="product.html">Products</a>
+      	</nav>
+      </main>
+
+		<script>
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("dot");
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";  
+					}
+					slideIndex++;
+					if (slideIndex > slides.length) {slideIndex = 1}    
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";  
+					dots[slideIndex-1].className += " active";
+					setTimeout(showSlides, 2000); // Change image every 2 seconds
+				}
+		</script>
+			  
+			  
+      <footer>
+        <p>
+
+        </p>
+      </footer>
+
+    </div>
+    </body>
+</html>

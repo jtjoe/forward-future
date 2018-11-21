@@ -11,7 +11,7 @@ if(isset($_POST['submit']))//checks data was submitted from form in website
   $userLast = mysqli_real_escape_string($conn,$POST['userLast']);
   $userName = mysqli_real_escape_string($conn,$POST['userName']);
   $userEmail = mysqli_real_escape_string($conn,$POST['email']);
-  $userPass = mysqli_real_escapse_string($conn,$POST)['userPass'];
+  $userPass = mysqli_real_escape_string($conn,$POST)['userPass'];
 
 
   //Check for errors, no empty Fields
@@ -39,7 +39,7 @@ if(isset($_POST['submit']))//checks data was submitted from form in website
         $resultCheck= mysqli_num_rows($result);
 
         if($resultCheck > 0){
-        header("Location: ../signup.php?singup=USERNAMETAKEN"); // error check for username that is already taken
+        header("Location: ../signup.php?signup=USERNAMETAKEN"); // error check for username that is already taken
         exit();
         }
         else{
@@ -48,7 +48,7 @@ if(isset($_POST['submit']))//checks data was submitted from form in website
           //insert users into DB
           $sql = "INSERT INTO log (userFirst, userLast,userName, userEmail, userPass) VALUES ('$first', '$last','$userName','$userEmail','$hashedPass');";
            mysqli_query($conn, $sql);
-           header("Location: ../signup.php?singup=SUCCESS"); // error check for username that is already taken
+           header("Location: ../signup.php?signup=SUCCESS"); // error check for username that is already taken
            exit();
         }
       }
