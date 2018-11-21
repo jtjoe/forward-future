@@ -4,12 +4,12 @@ import CartButton from './cartButton';
 class NavBar extends React.Component {
   render() {
     return (
-      <div id="navbar">
-        <h2>
-          <a href="index.html">Home</a> &nbsp;
-          <a href="shop.html">Collections</a> &nbsp;
-          <a href="dashboard.html">Dashboard</a> &nbsp;
-        </h2>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Collections</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
         <CartButton />
       </div>
     );
