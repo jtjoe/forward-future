@@ -1,3 +1,5 @@
+
+
 body{
   font-family: 'Oxygen', Arial, sans-serif;
 }
@@ -15,24 +17,7 @@ body{
   margin-left: 500px;
 }
 
-/* Original navbar
-#navbar{
-  text-align: center;
-  float:left;
-  padding: 10px;
-  font-size: 120%;
-}
-#navbar a{
 
-  text-decoration: none;
-  font-family: 'Khand', Impact, sans-serif;
-  font-weight: Medium;
-
-/*}
-#navbar a:hover, main a:hover, footer a:hover, #navbar a:visited, main a:visited, footer a:visited{
-  color: #5A00B9; /* ivrtual violet */
- /*}
-*/
 div {
   position: relative;
 
@@ -65,6 +50,7 @@ div {
 text-align: center;
 display: inline;
 }
+
 
 
 

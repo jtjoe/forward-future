@@ -3,14 +3,14 @@ import logo from './assets/logo-horizontal.png';
 import './style.css';
 import AccountControl from './components/accountControl.js';
 import TitleBar from './components/titleBar.js';
-import NavBar from './components/collections.js';
+import Collections from './components/collections.js';
 import glasses from './assets/glasses.jpg';
 import shirt from './assets/shirt.jpg';
 import cart from './assets/cart.png';
 import login from './assets/login.png';
 import glasses2 from './assets/glasses2.jpg';
 import shirt2 from './assets/shirt2.jpg';
-
+import NavBar from './components/navBar.js';
 
 
 class App extends Component {
@@ -24,10 +24,12 @@ class App extends Component {
       <img src= {login} className="login-icon" alt= "login" />
       <img src= {shirt2} className="shirt2-photo" alt= "shirt2" />
       <img src= {glasses2} className="g2-photo" alt= "glasses2" />
-           <TitleBar />
-           <NavBar />
-          <AccountControl />
+          <TitleBar />
 
+
+
+          <NavBar/>
+          <Collections />
           <div className="App">
           <p class="p1"> The Future of Online Shopping is Here </p><p class="p2"> &nbsp;&nbsp;&nbsp;
           Browse our selection of the finest<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -45,7 +47,6 @@ class App extends Component {
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; satisfaction
 			through adding interactive 3D models into the company web store.   </p>
           </div>
-          
       </div>
 
     );
