@@ -13,12 +13,15 @@
       <!-- <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
       <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script> -->
 
-      <meta name ="viewport"content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
       </script>
       <![endif]-->
-      <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="login.css">
+		<link rel="stylesheet" href="Register.css">
+		<link rel="stylesheet" href="home.css">
 
     </head>
 
@@ -26,60 +29,98 @@
     <div id="main">
 
       <header>
-        <a class="one" href="home.html"><img border = "0" src="Logo.png" />
-		</a>
+		  <h2>Register</h2>
+        <a class="logo" href="home.html"><img border = "0" src="Logo.png" /></a>
 			
 		</header>
 		
       <main>
 	  <nav>
 		  
-       <a class="one" href="home.html">Home<br>
-       <a class="one" href="Login.html">Login<br>
-       <a class="one" href="Dashboard.html">Dashboard<br>
-        <a class="one" href="product.html">Products</a>
+       <a class="one" href="home.html">Home<br></a>
+       <a class="one" href="Login.html">Register<br></a>
+       <a class="one" href="Dashboard.html">Dashboard<br></a>
+       <a class="one" href="product.html">Products</a>
       </nav>
       </main>
-		   
     	</div>
-    </body>
+			
+	
+		<button2 onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button2>
+
+		<div id="id01" class="modal">
+  
+  		<form class="modal-content animate" action="/action_page.php">
+   		 <div class="container">
+   		   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+   		   <img src="../ff-app/src/assets/logo-horizontal.png" alt="Avatar" class="avatar">
+ 		   </div>
+	
+ 		   <div class="login container">
+ 	     <label for="uname"><b>Username</b></label>
+ 	     <input type="text" placeholder="Enter Username" name="uname" required>
+
+  	    <label for="userPass"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="userPass" required>
+        
+  	    <button type="submit">Login</button>
+  	    <label>
+  	      <input type="checkbox" checked="checked" name="remember"> Remember me
+  	    </label>
+  	  </div>
+
+ 	   <div class="container" style="background-color:#f1f1f1">
+ 	     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+ 	     <span class="userPass"> <a href="Login.html">Create a Account</a></span>
+ 	   </div>
+	  </form>
+	</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 		
-      <div id="index">
+		
+		<form action="/action_page.php">
+  <div class="rcontainer">
+    <p>Please fill in this form to create an account.</p>
+    <hr>
 
-			<header>
-			<h2>I am already a registered Forward Future user</h2>
-				<table>
-                <tr> 
-					<td>User name：</td>
-                    <td>
-                        <!--<input type="text" name="userid" value="" placeholder="登录名"/>-->
-                        <input type="text" name="user" value=""/>
-						<a class="one" href="dashboardpage.html">Create Account</a>
-                    </td>
-                </tr>
-    			
-					<tr>
-                    <td>Passward：</td>
-                    <td>
-                        <input type="password" name="pw" value="" />
-                    
-                    </td>
-					
-					</tr>
-                
-					<tr>
-                    <td colspan="1">
-                        <input type="submit" value="Login" />
+      <label for="userFirst"><b>First Name</b></label>
+      <input type="text" placeholder="Enter First Name" name="userFirst" required>
 
-                    </td>
-               </tr>
-            	</table>
-			</header>
-         </div>
-		   
+      <label for="userLast"><b>Last Name</b></label>
+      <input type="text" placeholder="Enter Last Name" name="userLast" required>
+
+      <label for="userName"><b>User Name</b></label>
+      <input type="text" placeholder="Choose User Name" name="userName" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="userPass"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="userPass" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="rregisterbtn">Register</button>
+  </div>
+</form>
+    </body>
+
       <footer>
-        <p>
-
+        <p>Copyright © 2018 Forawrd Furture
         </p>
       </footer>
 </html>

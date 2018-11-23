@@ -13,12 +13,14 @@
       <!-- <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
       <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script> -->
 
-      <meta name ="viewport"content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
       </script>
       <![endif]-->
       <link rel="stylesheet" href="style.css">
+		
+	  <link rel="stylesheet" href="st.css">
 
     </head>
 
@@ -30,12 +32,48 @@
       </header>
 
       <nav>
-        <!-- <a href="index.html">Welcome Page</a>&nbsp;
+         <a href="index.html">Welcome Page</a>&nbsp;
         <a href="about.html">About the Project</a>&nbsp;
         <a href="specifications.html">Specifications</a>&nbsp;
         <a href="ProjectPlan.html">Project Plan</a>&nbsp;
-        <a href="Team.html">Team Page</a> -->
+        <a href="Team.html">Team Page</a>
       </nav>
+		
+		<div id="navbar">
+					<h2>
+				<a href="home.html" onClick={(ev) => this.props.handleMainPages("index")}>Home</a> &nbsp;
+				<a href="shop.html" onClick={(ev) => this.props.handleMainPages("shop")}>Collections</a> &nbsp;
+				<a href="dashboard.html" onClick={(ev) => this.props.handleMainPages("dashboard")}>Dashboard</a> &nbsp;
+				</h2>
+				<CartButton onClick={(ev) => this.props.handleMainPages("cart")}/>
+				</div>
+		
+		
+		<script>
+			import React, { Component } from 'react';
+			import CartButton from './cartButton';
+			import AccountControl from './accountControl';
+
+			class NavBar extends React.Component {
+
+  			render() {
+    		return (
+					<div id="navbar">
+					<h2>
+				<a href="index.html" onClick={(ev) => this.props.handleMainPages("index")}>Home</a> &nbsp;
+				<a href="shop.html" onClick={(ev) => this.props.handleMainPages("shop")}>Collections</a> &nbsp;
+				<a href="dashboard.html" onClick={(ev) => this.props.handleMainPages("dashboard")}>Dashboard</a> &nbsp;
+				</h2>
+				<CartButton onClick={(ev) => this.props.handleMainPages("cart")}/>
+				</div>
+    );
+  }
+}
+
+export default NavBar;
+
+			</script>
+		
 
       <div id="index"></div>
 
