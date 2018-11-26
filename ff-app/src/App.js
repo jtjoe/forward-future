@@ -30,6 +30,7 @@ class App extends Component {
 
           <NavBar/>
           <Collections />
+          <AccountControl />
           <div className="App">
           <p class="p1"> The Future of Online Shopping is Here </p><p class="p2"> &nbsp;&nbsp;&nbsp;
           Browse our selection of the finest<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
