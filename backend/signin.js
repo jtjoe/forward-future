@@ -6,7 +6,7 @@ module.exports = (app) => {
 
 // Registration
 
-  app.post('/api/account/signup', (req, res, next) => {
+  app.post('/loginwhaever', (req, res, next) => {
     const { body } = req;
     console.log('body', body);
     const {
@@ -88,7 +88,7 @@ module.exports = (app) => {
 
   });
 
-  app.post('/api/account/signin', (req, res, next) => {
+  app.post('/loginWhatever', (req, res, next) => {
     const { body } = req;
     const {
       password
