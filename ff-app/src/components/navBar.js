@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import CartButton from './cartButton';
 import AccountControl from './accountControl';
+import LoginButton from './loginButton';
+import SignupButton from './signupButton';
 
 class NavBar extends React.Component {
   handleOnClickCollections = (event) => {
@@ -21,6 +23,8 @@ handleOnClickDashboard = (event) => {
           <li><a href="dashboard.html" onClick={this.handleOnClickDashboard}>Dashboard</a></li>
         </ul>
         <CartButton />
+        <LoginButton />
+        <SignupButton />
       </div>
     );
   }

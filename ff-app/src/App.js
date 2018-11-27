@@ -24,7 +24,7 @@ class App extends Component {
       result = <Collections onScreenChange={this.handleOnScreenChange}/>;
     }
     else if (this.state.screen === 'dashboard'){
-      result = <div>blah blah</div>;
+      result = <div>dashboard page</div>;
     }
 
     return result;
