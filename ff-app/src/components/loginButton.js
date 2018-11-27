@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+const style = {width: 'auto'};
 
 class LoginButton extends React.Component {
   render() {
     return (
-      <div id="loginbutton">
-        <button type="button" onClick={this.props.onClick}>Login</button>
-      </div>
+
+      
+
     );
   }
 }
