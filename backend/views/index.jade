@@ -4,7 +4,7 @@ html
 block content
   h2 Log in
   
-  div.form(action="#{router}" method="method")
+  div.form(action="#{router}" method="POST")
     .form-group
       label(for='email') Email
       input.form-control(type='email', name='email' placeholder='Email' autofocus=true)
@@ -14,15 +14,14 @@ block content
     button.btn.btn-primary(type="submit") Log-in 
 
   h2 Register Here <br/><br/>
-  div.form(action="#{router}" method="method")
-          
-          
+  
+  div.form(action="#{router}" method="POST")
       .form-group
-        label(for='firstname')First Name
+        label First Name
         input(type="text", placeholder="Enter First Name" name="firstname" required)
       
       .form-group
-        label(for='lastname') Last Name
+        label Last Name
         input(type="text", placeholder="Enter Last Name" name="lastname" required)
       
       .form-group
@@ -35,7 +34,7 @@ block content
     
       .form-group
         label(for='password') Password
-        input(type="password", placeholder="Enter Password", name="password" requiredss)
+        input(type="password", placeholder="Enter Password", name="password" required)
       
       .form-group
         label(for='passwordConf') Repeat Password
