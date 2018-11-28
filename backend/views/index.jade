@@ -2,4 +2,29 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to #{title} i'm testing this stupid ting
+
+  doctype html
+  html
+    body
+      h1 Register Here <br/><br/><br/><br/sss>
+      
+                label First Name
+                input(type="text", placeholder="Enter First Name")
+      
+                label Last Name
+                input(type="text", placeholder="Enter Last Name" required)
+      
+                label User Name
+                input(type="text", placeholder="Choose User Name" required)
+      
+                label Email
+                input(type="text", placeholder="Enter Email" name="email" required)
+      
+                label Password
+                input(type="password", placeholder="Enter Password", name="password" requiredss)
+      
+                label Repeat Password
+                input(type="password", placeholder="Repeat Password", name="passwordConf" required)
+      
+                button(type="submit", class="registerbtn") Register
