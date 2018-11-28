@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
-var User = require('../models/user');
+var User = require('../backend/user');
 
 
 // GET route for reading data
 router.get('/', function (req, res, next) {
-  return res.sendFile(path.join(__dirname + '/templateLogReg/index.html'));
+  return res.sendFile(path.join(__dirname + '/ff-app/index.html'));
 });
 
 
@@ -66,7 +66,7 @@ router.get('/profile', function (req, res, next) {
         return next(error);
       } else {
         if (user === null) {
-          var err = new Error('Not authorized! Go back!');
+          var err = new Error('You are not authorized');
           err.status = 400;
           return next(err);
         } else {

@@ -29,6 +29,9 @@ class Account extends React.Component {
   handleSignupClick() {
     // TODO: redirect to signup or show signup components
     this.setState({showForm: "signup"});
+    if (this.state.redirect){
+      return <redirect to='/signup.html' />
+    }
   }
 
   render() {
