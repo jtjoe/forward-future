@@ -3,6 +3,9 @@ import Home from './components/home.js';
 import Collections from './components/collections.js';
 
 
+import NavBar from './components/navBar.js';
+import Footer from './components/footer.js';
+
 class App extends Component {
 
   constructor(props) {
@@ -15,20 +18,41 @@ class App extends Component {
   };
 
   render() {
-    let result;
 
-    if (this.state.screen === 'home'){
-      result = <Home onScreenChange={this.handleOnScreenChange}/>;
-    }
-    else if (this.state.screen === 'collections') {
-      result = <Collections onScreenChange={this.handleOnScreenChange}/>;
-    }
-    else if (this.state.screen === 'dashboard'){
-      result = <div>dashboard page</div>;
-    }
+    return (
+      <div className="App">
 
-    return result;
+          <TitleBar />
+
+
+
+          <NavBar/>
+
+
+
+          <Footer />
+
+      </div>
+    );
   }
 }
 
 export default App;
+
+/*
+TODO:
+- Pages control
+  -welcome page contents
+  -shop page
+  -dashboard page
+    -for non-users
+    -for users
+  -404 error page
+  -login error page
+
+- Account control
+  -logins, signups
+  -invalid logins
+  -redirect to dashboard
+
+*/

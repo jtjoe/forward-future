@@ -32,5 +32,8 @@
     "not ie <= 11",
     "not op_mini all"
   ],
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
   "proxy": "http://localhost/3001"
 }
