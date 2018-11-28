@@ -3,6 +3,7 @@ import NavBar from './navBar';
 import Account from './account';
 import LogoutButton from './logoutButton';
 
+
 class AccountControl extends React.Component {
   constructor(props) {
     super(props);

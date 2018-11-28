@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
-import logo from './assets/logo-horizontal.png';
-import './style.css';
-import './home.css';
-import './login.css';
-import './product.css';
-import './Register.css';
-//import './search.css';
-import AccountControl from './components/accountControl.js';
-import TitleBar from './components/titleBar.js';
+import Home from './components/home.js';
+import Collections from './components/collections.js';
+
 
 import NavBar from './components/navBar.js';
 import Footer from './components/footer.js';
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {screen: 'home'};
+  }
+
+  handleOnScreenChange = (screen) => {
+    this.setState({screen: screen});
+  };
+
   render() {
+
     return (
       <div className="App">
 

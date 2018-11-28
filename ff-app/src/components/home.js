@@ -5,18 +5,18 @@ import NavBar from './navBar';
 class Home extends React.Component {
   render() {
     return (
+
       <div id="home">
 
 
         <a href="index.html"><h1>Forward Future</h1></a>&nbsp;
+
       </div>
     );
   }
 }
 
 export default Home;
-
-
 /*
 import glasses from './assets/glasses.jpg';
 import shirt from './assets/shirt.jpg';
@@ -84,3 +84,4 @@ import CartButton from './cartButton';
 </div>
 
 */
+

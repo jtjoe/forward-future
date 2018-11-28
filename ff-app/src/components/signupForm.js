@@ -117,7 +117,7 @@ class SignupForm extends React.Component {
   render() {
     return (
       <div id="signupform">
-        <form>
+
           <h2>Register Here</h2>
           <p>Please fill in this form to create an account.</p>
 
