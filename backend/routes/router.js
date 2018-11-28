@@ -5,7 +5,7 @@ var User = require('../backend/user');
 
 // GET route for reading data
 router.get('/', function (req, res, next) {
-  return res.sendFile(path.join(__dirname + '/ff-app/index.html'));
+  return res.sendFile(path.join(__dirname + '/views/signup.jade'));
 });
 
 

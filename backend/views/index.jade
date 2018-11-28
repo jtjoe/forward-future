@@ -1,30 +1,44 @@
 extends layout
-
+doctype html
+html
 block content
-  h1= title
-  p Welcome to #{title} i'm testing this stupid ting
+  h2 Log in
+  
+  div.form(action="#{router}" method="method")
+    .form-group
+      label(for='email') Email
+      input.form-control(type='email', name='email' placeholder='Email' autofocus=true)
+    .form-group
+      label(for='password') Password
+      input.form-control(type='password', name='password')
+    button.btn.btn-primary(type="submit") Log-in 
 
-  doctype html
-  html
-    body
-      h1 Register Here <br/><br/><br/><br/sss>
+  h2 Register Here <br/><br/>
+  div.form(action="#{router}" method="method")
+          
+          
+      .form-group
+        label(for='firstname')First Name
+        input(type="text", placeholder="Enter First Name" name="firstname" required)
       
-                label First Name
-                input(type="text", placeholder="Enter First Name")
+      .form-group
+        label(for='lastname') Last Name
+        input(type="text", placeholder="Enter Last Name" name="lastname" required)
       
-                label Last Name
-                input(type="text", placeholder="Enter Last Name" required)
+      .form-group
+        label(for='username') User Name
+        input(type="text", placeholder="Choose User Name" name="username" required)
+    
+      .form-group
+        label(for='email') Email
+        input(type="text", placeholder="Enter Email" name="email" required)
+    
+      .form-group
+        label(for='password') Password
+        input(type="password", placeholder="Enter Password", name="password" requiredss)
       
-                label User Name
-                input(type="text", placeholder="Choose User Name" required)
-      
-                label Email
-                input(type="text", placeholder="Enter Email" name="email" required)
-      
-                label Password
-                input(type="password", placeholder="Enter Password", name="password" requiredss)
-      
-                label Repeat Password
-                input(type="password", placeholder="Repeat Password", name="passwordConf" required)
-      
-                button(type="submit", class="registerbtn") Register
+      .form-group
+        label(for='passwordConf') Repeat Password
+        input(type="password", placeholder="Repeat Password", name="passwordConf" required)
+    
+        button.btn.btn-primary(type="submit") Sign Up 
