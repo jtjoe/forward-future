@@ -21,9 +21,10 @@ img {vertical-align: middle;}
 
 /* The dots/bullets/indicators */
 .dot {
+  display: none;
   height: 15px;
   width: 15px;
-
+  text-align: center;
   margin: auto;
   position:relative;
   left:120px;

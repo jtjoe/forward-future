@@ -20,17 +20,11 @@ button {
     text-align: center;
 }
 
-#loginbutton{
+#loginbutton, #signupbutton, #cartbutton{
+  margin: 2% 1% 1% 1%;
   float: right;
-  margin-right: 16%;
-}
-#signupbutton{
-  float: right;
-  margin-right: 9%;
-}
-#cartbutton{
-  float: right;
-  margin-right: 2%;
+  z-index: 1;
+
 }
 
 button:hover {

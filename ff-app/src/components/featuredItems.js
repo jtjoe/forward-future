@@ -47,10 +47,11 @@ class FeaturedItems extends React.Component {
       		 <h1 className="featuredTitle">Featured Products</h1>
            <p className="p1"> The Future of Online Shopping is Here </p>
            <p className="p2"> Browse our selection of the finest futurtist clothing & accessories</p>
-           <img src={glasses} className="g-photo" alt="glasses" />
-           <img src={shirt} className="shirt-photo" alt="shirt" />
-           <img src= {shirt2} className="shirt2-photo" alt= "shirt2" />
-           <img src= {glasses2} className="g2-photo" alt= "glasses2" />
+           <img src={glasses} className="product-image" id="g-photo" alt="glasses" />
+           <img src= {glasses2} className="product-image" id="g2-photo" alt= "glasses2" />
+           <img src={shirt} className="product-image" id="shirt-photo" alt="shirt" />
+           <img src= {shirt2} className="product-image" id="shirt2-photo" alt= "shirt2" />
+
 
     	</div>
     );

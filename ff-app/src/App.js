@@ -53,7 +53,7 @@ class App extends Component {
       show = <Home />;
     }
     if (this.state.screen == 'collections') {
-      show = <Collections />;
+      show = <NewItems />;
     }
     if (this.state.screen == 'dashboard') {
       show = <FeaturedItems />;
@@ -70,8 +70,13 @@ class App extends Component {
 
     return (
       <div>
-        <TitleBar />
+        <div className="mainbuttons">
+          <div id="loginbutton"><button type="button" onClick={() => this.handleOnClick('login')}>Login</button></div>
+          <div id="signupbutton"><button type="button" onClick={() => this.handleOnClick('signup')}>Sign Up</button></div>
+          <div id="cartbutton"><button type="button" onClick={() => this.handleOnClick('cart')}>My Cart</button></div>
+        </div>
 
+        <TitleBar />
 
         <div className="nav">
             <h2><a className="one" onClick={() => this.handleOnClick('home')}>Home</a></h2>
@@ -79,17 +84,6 @@ class App extends Component {
             <h2><a className="one" onClick={() => this.handleOnClick('dashboard')} >Dashboard</a></h2>
         </div>
 
-        <div id="loginbutton">
-          <button type="button" onClick={() => this.handleOnClick('login')}>Login</button>
-        </div>
-
-        <div id="signupbutton">
-          <button type="button" onClick={() => this.handleOnClick('signup')}>Sign Up</button>
-        </div>
-
-        <div id="cartbutton">
-          <button type="button" onClick={() => this.handleOnClick('cart')}>My Cart</button>
-        </div>
 
 
         {show}
