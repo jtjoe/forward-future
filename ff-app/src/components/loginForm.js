@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class LoginForm extends React.Component {
   render() {
     return (
-      <div id="loginform">
-        <form action="./login.php" method="POST">
+      <div id="loginform" className="modal-content">
+        <form action="./router.js" method="POST">
           <h2>Login to Your Account</h2>
 
           <label for="userName"><b>User Name</b></label>

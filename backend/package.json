@@ -11,6 +11,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
+    "connect-mongo": "^2.0.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "^4.16.4",

@@ -13,6 +13,7 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
   // we're connected!
+  console.log('connected!');
 });
 
 //use sessions for tracking logins
@@ -34,7 +35,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(__dirname + '/backend'));
 
 // include routes
-var routes = require('./backend/router');
+var routes = require('../routes');
 app.use('/', routes);
 
 // catch 404 and forward to error handler
