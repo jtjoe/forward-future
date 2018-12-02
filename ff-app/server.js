@@ -33,6 +33,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // serve static files from template
 app.use(express.static(__dirname + '/backend'));
+//?? replace with react?
 
 // include routes
 var routes = require('../backend/routes');
@@ -56,4 +57,9 @@ app.use(function (err, req, res, next) {
 // listen on port 3000
 app.listen(3001, function () {
   console.log('Express app listening on port 3001');
+});
+
+// GET route for checking connection
+app.get('/connect', (req, res) => {
+  res.send({ connection: 'true' });
 });

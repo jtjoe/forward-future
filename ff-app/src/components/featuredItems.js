@@ -45,8 +45,8 @@ class FeaturedItems extends React.Component {
     return (
       <div id="featureditems">
       		 <h1 className="featuredTitle">Featured Products</h1>
-           <p class="p1"> The Future of Online Shopping is Here </p>
-           <p class="p2"> Browse our selection of the finest futurtist clothing & accessories</p>
+           <p className="p1"> The Future of Online Shopping is Here </p>
+           <p className="p2"> Browse our selection of the finest futurtist clothing & accessories</p>
            <img src={glasses} className="g-photo" alt="glasses" />
            <img src={shirt} className="shirt-photo" alt="shirt" />
            <img src= {shirt2} className="shirt2-photo" alt= "shirt2" />
