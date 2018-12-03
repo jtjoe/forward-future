@@ -114,4 +114,6 @@ p.about {
 }
 p.abouttxt {
     font-size: 1.2em;
+    width: 70%;
+    margin: auto;
 }

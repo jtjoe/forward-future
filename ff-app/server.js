@@ -1,12 +1,17 @@
-var express = require('express');
+const express = require('express');
 var app = express();
-var bodyParser = require('body-parser');
-var mongoose = require('mongoose');
+const path = require('path');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
+const port = process.env.PORT || 3001;
 
-//connect to MongoDB
-mongoose.connect('mongodb://localhost/testForAuth');
+//set up mongoose
+mongoose.Promise = global.Promise;
+
+//connect to MongoDB, moght get err socketHandler if database isn't open
+mongoose.connect('mongodb://localhost:3001');
 var db = mongoose.connection;
 
 //handle mongo error
@@ -31,10 +36,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 
-// serve static files from template
-app.use(express.static(__dirname + '/backend'));
-//?? replace with react?
-
 // include routes
 var routes = require('../backend/routes');
 app.use('/', routes);
@@ -54,12 +55,12 @@ app.use(function (err, req, res, next) {
 });
 
 
-// listen on port 3000
-app.listen(3001, function () {
+// listen on port 3001
+app.listen(port, function () {
   console.log('Express app listening on port 3001');
 });
 
 // GET route for checking connection
-app.get('/connect', (req, res) => {
+app.use('/check', (req, res) => {
   res.send({ connection: 'true' });
 });

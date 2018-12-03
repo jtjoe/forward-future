@@ -37,11 +37,6 @@ class NewItems extends React.Component {
           <div className="smartcoat"><img src= {slide3} alt= "smartcoat" /></div>
     		</div>
 
-        <div>
-          <span className="dot"></span>
-          <span className="dot"></span>
-          <span className="dot"></span>
-        </div>
     	</div>
     );
   }

@@ -34,7 +34,7 @@ class App extends Component {
   }
     // Fetches our GET route from the Express server. (Note the route we are fetching matches the GET route from server.js
   checkConnection = async () => {
-    const response = await fetch('/check');
+    const response = await fetch('../check');
     const body = await response.json();
 
     if (response.status !== 200) {
@@ -49,22 +49,22 @@ class App extends Component {
 
   render() {
     var show = <FeaturedItems />;
-    if (this.state.screen == 'home') {
+    if (this.state.screen === 'home') {
       show = <Home />;
     }
-    if (this.state.screen == 'collections') {
-      show = <NewItems />;
+    if (this.state.screen === 'collections') {
+      show = <Collections />;
     }
-    if (this.state.screen == 'dashboard') {
+    if (this.state.screen === 'dashboard') {
       show = <FeaturedItems />;
     }
-    if (this.state.screen == 'login') {
+    if (this.state.screen === 'login') {
       show = <LoginForm />;
     }
-    if (this.state.screen == 'signup') {
+    if (this.state.screen === 'signup') {
       show = <SignupForm />;
     }
-    if (this.state.screen == 'cart') {
+    if (this.state.screen === 'cart') {
       show = <Home />;
     }
 
@@ -83,8 +83,6 @@ class App extends Component {
             <h2><a className="one" onClick={() => this.handleOnClick('collections')} >Collections</a></h2>
             <h2><a className="one" onClick={() => this.handleOnClick('dashboard')} >Dashboard</a></h2>
         </div>
-
-
 
         {show}
 

@@ -12,7 +12,7 @@ class LoginForm extends React.Component {
 
   handleSubmit = async e => {
     e.preventDefault();
-    const response = await fetch('/api/world', {
+    const response = await fetch('/router', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ class LoginForm extends React.Component {
   render() {
     return (
       <div id="loginform" className="modal-content">
-        <form action="./router.js" method="POST">
+        <form action={this.handleSubmit} method="POST">
           <h2>Login to Your Account</h2>
 
           <label for="userName"><b>User Name</b></label>
