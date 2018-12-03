@@ -10,7 +10,7 @@ const port = process.env.PORT || 3001;
 //set up mongoose
 mongoose.Promise = global.Promise;
 
-//connect to MongoDB, moght get err socketHandler if database isn't open
+//connect to MongoDB, might get err socketHandler if database isn't open
 mongoose.connect('mongodb://localhost:3001');
 var db = mongoose.connection;
 
@@ -62,5 +62,5 @@ app.listen(port, function () {
 
 // GET route for checking connection
 app.use('/check', (req, res) => {
-  res.send({ connection: 'true' });
+  res.send({connection: true});
 });

@@ -57,12 +57,12 @@ a-scene {
 .product-image {
   width: 540px;
   height: 315px;
-  display: block;
-  margin: 10px;
+  display: inline-flex;
+  margin: 35px;
 }
 
 #shirt-photo {
-  float: right;
+
 }
 #shirt2-photo {
 
@@ -74,7 +74,7 @@ a-scene {
 
 }
 #g2-photo {
-  float: right;
+
 }
 #cart-icon, #login-icon {
   width: 50px;
@@ -85,13 +85,17 @@ a-scene {
   position: absolute;
 }
 
-
+#newitems, #featureditems {
+  display: block;
+  margin: auto;
+}
 
 
   h1.featuredTitle{
     font-weight: normal;
     text-align: center;
     font-size: 2.5em;
+    display: block;
 }
 
 p {
@@ -101,10 +105,11 @@ p {
   margin: 20px;
   text-align: center;
 }
-p.p1 {
+.p1 {
   font-weight: 600;
   font-size: 1.8em;
   color: #C62300;
+  text-align: center;
 }
 p.p2 {
     font-size: 1.2em;

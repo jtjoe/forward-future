@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import TitleBar from './components/titleBar';
-import Home from './components/home.js';
-import Collections from './components/collections.js';
-//import dashboard
-import SignupForm from './components/signupForm.js';
-import FeaturedItems from './components/featuredItems';
-import NewItems from './components/newItems';
+import Home from './components/home';
+import Collections from './components/collections';
+import Dashboard from './components/dashboard';
+import Cart from './components/cart';
+
+import SignupForm from './components/signupForm';
 import LoginForm from './components/loginForm';
 
 import './home.css';
@@ -48,7 +48,8 @@ class App extends Component {
   }
 
   render() {
-    var show = <FeaturedItems />;
+    var show = <Home />;
+
     if (this.state.screen === 'home') {
       show = <Home />;
     }
@@ -56,7 +57,7 @@ class App extends Component {
       show = <Collections />;
     }
     if (this.state.screen === 'dashboard') {
-      show = <FeaturedItems />;
+      show = <Dashboard isLoggedIn={this.state.isLoggedIn} />;
     }
     if (this.state.screen === 'login') {
       show = <LoginForm />;
@@ -65,7 +66,7 @@ class App extends Component {
       show = <SignupForm />;
     }
     if (this.state.screen === 'cart') {
-      show = <Home />;
+      show = <Cart isLoggedIn={this.state.isLoggedIn}/>;
     }
 
     return (

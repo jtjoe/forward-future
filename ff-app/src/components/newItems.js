@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import slide1 from '../assets/smart-coat-1.jpg';
 import slide2 from '../assets/smart-coat-2.jpg';
-import slide3 from '../assets/smart-coat-3.jpg';
+import slide3 from '../assets/sneakers.jpg';
 
 class NewItems extends React.Component {
   componentDidMount() {
@@ -30,11 +29,13 @@ class NewItems extends React.Component {
     return (
       <div id="newitems">
         <h1 className="featuredTitle">New Products</h1>
+        <p className="p1"> These items just in </p>
+        <p className="p2"> Browse our selection of the finest futurtist clothing & accessories</p>
 
-        <div className="slideshow-container">
-      		<div className="smartcoat"><img src= {slide1} alt= "smartcoat" /></div>
-          <div className="smartcoat"><img src= {slide2} alt= "smartcoat" /></div>
-          <div className="smartcoat"><img src= {slide3} alt= "smartcoat" /></div>
+
+        <div>
+          <div className="product-image" id="g2-photo"><img src= {slide2} alt= "smartcoat" /></div>
+          <div className="product-image" id="shirt-photo"><img src= {slide3} alt= "sneakers" /></div>
     		</div>
 
     	</div>
